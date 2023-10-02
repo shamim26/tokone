@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* animation for banner rounded button */
+.animation-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #5742E8;
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
+    }
+
+}
+
+/* swiper custom pagination */
+.swiper-pagination-bullet {
+    @apply rounded-none border-4 border-[#E2FFF0] h-4 w-4
+}
+
+.swiper-pagination {
+    @apply text-end
+}
+
+.swiper-pagination-bullet-active {
+    @apply bg-secondary bg-opacity-80;
+}
